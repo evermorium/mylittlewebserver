@@ -1,0 +1,79 @@
+body{
+    color: #EEEEEE;
+    background-color: #222831;
+}
+.top_txt{
+    padding-top: 30px;
+    text-align: center;
+   
+}
+
+.bottom_txt{
+    position: relative;
+    text-align: center;
+    padding-top: 30px ;
+}
+
+.rect::before{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:-15%;
+    left: 50%;
+    width: 600px;
+    text-align: center;
+    content: 'Welcome to World Wide Web Server Vulner World';
+    display: inline-block;
+}
+
+.rect{
+    font-size: 20px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top: 50%;
+    border-radius: 8px; 
+    box-shadow: 2px 2px 2px 2px #111111;
+    background-color: #393E46;  
+}
+.title{
+    margin: 30px;
+    font-size: 70px;
+    text-align: center;
+    
+}
+
+.line{
+    height:40px;
+    background-color: #00ADB5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.form_size{
+    width: 400px;
+    height: 500px;
+}
+
+.form_input{
+    height: 50px;
+    width: 300px;
+    border-radius: 8px;
+    background-color: #EEEEEE;
+}
+
+.button_login{
+    margin-top: 15px;
+    background-color: #00ADB5 ;
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    
+}
+
+.button_signup{
+    margin-top: 4px;
+    background-color: #AAAAB2 ;
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+}
