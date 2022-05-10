@@ -9,6 +9,7 @@ $user = "root";
 $password = "password";
 
 $con = mysqli_connect($servername,$user,$password);
+
 if(!$con)
 {
     die("서버와의 연결실패".mysqli_connect_error());
