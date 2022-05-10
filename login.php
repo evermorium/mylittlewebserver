@@ -6,7 +6,7 @@ $PW = $_POST['password'];
 
 $servername = "localhost";
 $user = "root";
-$password = "password";
+$password = "";
 
 $con = mysqli_connect($servername,$user,$password);
 
