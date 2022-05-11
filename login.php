@@ -16,9 +16,9 @@ $con = mysqli_connect($servername,$user,$password,$db);
 
 if(!$con)
 {
-    die("서버와의 연결실패" .mysqli_connect_error());
+    die("access denied" .mysqli_connect_error());
 }
-echo "서버와의 연결 성공!";
+echo "access success";
 
 if($ID == $corID && $PW == $corPW)
 {
