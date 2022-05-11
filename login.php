@@ -6,13 +6,13 @@ $PW = $_POST['password'];
 
 $servername = "localhost";
 $user = "root";
-$password = "";
-
-$con = mysqli_connect($servername,$user,$password);
+$password = "password";
+$db = "Users"
+$con = mysqli_connect($servername,$user,$password,$db);
 
 if(!$con)
 {
-    die("서버와의 연결실패".mysqli_connect_error());
+    die("서버와의 연결실패" .mysqli_connect_error());
 }
 echo "서버와의 연결 성공!";
 
