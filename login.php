@@ -4,9 +4,9 @@
 $ID = $_POST['username'];
 $PW = $_POST['password'];
 
-$mysqli = new mysqli("localhost","root","password","Users");
-echo $mysqli->host_info . "\n";
-/*
+/*$mysqli = new mysqli("localhost","root","password","Users");
+echo $mysqli->host_info . "\n";*/
+
 $link = mysql_connect('localhost','root','password');
 if(!$link)
 {
@@ -14,7 +14,6 @@ if(!$link)
 }
 echo 'Connected successfully';
 mysql_close($link);
-*/
 /*
 if($ID == $corID && $PW == $corPW)
 {
