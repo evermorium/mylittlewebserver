@@ -10,15 +10,13 @@ $servername = "localhost";
 $user = "root";
 $password = "password";
 $db = "Users"
-$con = mysqli_connect($servername,$user,$password,$db);
+$conn = mysqli_connect($servername,$user,$password,$db);
 
-
-
-if(!$con)
-{
-    die("access denied" .mysqli_connect_error());
+if(mysqli_connect_errno($conn)){
+	echo mysqli_connect_error();
+}else {
+	echo "데이터 연동";
 }
-echo "access success";
 
 if($ID == $corID && $PW == $corPW)
 {
