@@ -7,7 +7,7 @@ $corID = "temp";
 $corPW = "temp";
 
 
-$conn = mysqli_connect("localhost","root","password");
+$conn = mysqli_connect('localhost','root','password');
 if(!$conn)
 {
     die('Could not connect: ' . mysql_error());
