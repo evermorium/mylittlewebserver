@@ -6,17 +6,14 @@ $PW = $_POST['password'];
 $corID = "temp";
 $corPW = "temp";
 
-$servername = "localhost";
-$user = "root";
-$password = "password";
-$db = "Users"
-$conn = mysqli_connect($servername,$user,$password,$db);
 
-if(mysqli_connect_errno($conn)){
-	echo mysqli_connect_error();
-}else {
-	echo "데이터 연동";
+$conn = mysqli_connect("localhost","root","password");
+if(!$conn)
+{
+    die('Could not connect: ' . mysql_error());
 }
+echo 'Connected successfully';
+mysql_close($conn);
 
 if($ID == $corID && $PW == $corPW)
 {
