@@ -39,15 +39,16 @@ try {
     $stmt -> bindValue(":uid", $ID);
     $stmt -> execute();
     
-    $row = $stmt -> fetch();
-    echo "<pre>";
-    print_r($row);
-    echo "</pre>";
-    //$corpw = $stmt -> fetchColumn();
+    //$row = $stmt -> fetch();
+    //echo "<pre>";
+    //print_r($row);
+    //echo "</pre>";
+    $corpw = $stmt -> fetchColumn();
 
     if($corpw == $PW)
     {
         require("/var/www/html/secu_task_web3/secu999.php");
+
     }else{
         $html = file_get_contents('http://34.64.45.196/mylittlewebserver/Secu_Web_task_2.html');
         echo "" . $html;
