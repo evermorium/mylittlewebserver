@@ -1,7 +1,7 @@
 <?php
 
-$ID = $_POST("username");
-$PW = $_POST("password");
+$ID = $_POST['username'];
+$PW = $_POST['password'];
 
 $dbHost = "localhost";
 $dbName = "Users";
@@ -10,7 +10,8 @@ $dbPass = "password";
 
 try {
     // 서버잉름, 데이터베이스이름, 사용자명, 비밀번호를 전달 새로운 PDO 객체를 생성 
-    $db = new PDO("mysql:host ={$dbHost}; dbname = {$dbName}", $dbUser, $dbPass);
+    $
+    db = new PDO("mysql:host ={$dbHost}; dbname = {$dbName}", $dbUser, $dbPass);
     $db -> setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
     $db -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //PDO 객체에 에러모드 설정, 에러 발생될때마다 PDOException 으로 던짐
     echo "데이터베이스 연결 성공!!<br/>";
@@ -33,7 +34,7 @@ try {
     
     // 입력 받은 ID가 데이터 베이스에 존재하는지 확인하고 
     // 있으면 비밀번호 확인 후 비밀번호가 맞으면 통과 
-/*
+
     $query = "SELECT upw from Users.Users WHERE uid = :uid";
     $stmt = $db -> prepare($query);
     $stmt -> bindValue(":uid", $ID);
@@ -52,7 +53,7 @@ try {
         $html = file_get_contents('http://34.64.45.196/mylittlewebserver/Secu_Web_task_2.html');
         echo "" . $html;
     }
-*/
+
 
     } catch(PDOException $e)
     {
