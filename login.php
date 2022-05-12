@@ -53,7 +53,6 @@ try {
 
     if($corpw == $PW)
     {
-        echo "" .$corpw;
         require("/var/www/html/secu_task_web3/secu999.php");
 
     }else{
