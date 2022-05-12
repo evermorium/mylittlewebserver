@@ -33,7 +33,7 @@ try {
     
     // 입력 받은 ID가 데이터 베이스에 존재하는지 확인하고 
     // 있으면 비밀번호 확인 후 비밀번호가 맞으면 통과 
-
+/*
     $query = "SELECT upw from Users.Users WHERE uid = :uid";
     $stmt = $db -> prepare($query);
     $stmt -> bindValue(":uid", $ID);
@@ -52,7 +52,7 @@ try {
         $html = file_get_contents('http://34.64.45.196/mylittlewebserver/Secu_Web_task_2.html');
         echo "" . $html;
     }
-
+*/
 
     } catch(PDOException $e)
     {
