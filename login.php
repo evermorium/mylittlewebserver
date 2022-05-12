@@ -14,7 +14,7 @@ echo "데이터베이스 연결 성공!!<br/>";
 $keyword = "%테스트%";
 $no = 1;
 
-$query = "SELECT * from Users ";
+$query = "SELECT lid,profile, uid, upw, joindate from user.Users ";
 $stmt = $db -> prepare($query);
 $stmt -> execute(array($keyword, $no));
 $result = $stmt->fetchALL(PDO::FETCH_NUM);
