@@ -13,7 +13,6 @@ try {
     $db = new PDO("mysql:host ={$dbHost}; dbname = {$dbName}", $dbUser, $dbPass);
     $db -> setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
     $db -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //PDO 객체에 에러모드 설정, 에러 발생될때마다 PDOException 으로 던짐
-    echo "데이터베이스 연결 성공!!<br/>";
 
     //$keyword = "%테스트%";
     //$no = 1;
