@@ -35,8 +35,9 @@ try {
     $query = "SELECT uid from Users.Users";
     $stmt = $db -> prepare($query);
     $stmt -> execute();
-    $corID -> $stmt -> fetchColumn();
-    if ($ID == $corID){
+    $corID = $stmt -> fetchColumn();
+    if ($ID == $corID)
+    {
     
 
     $query = "SELECT upw from Users.Users WHERE uid = :uid";
